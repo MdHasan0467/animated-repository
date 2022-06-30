@@ -282,3 +282,7 @@ h4 {
 }
 
 /* =======Footer-section style end here======= */
+
+.footer__section__heading{
+  padding: 2rem 0;
+}
