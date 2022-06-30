@@ -1,0 +1,284 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'poppins', sans-serif;
+}
+/*================Header Section Start From Here================*/
+.header{
+  width: 100%;
+  height: 100vh;
+  padding: 20px 10%;
+  position: relative;
+}
+
+/* ----------------Navigation menu section Start from here--------------------- */
+nav{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav-links {
+  position: absolute;
+  right: 0px;
+  top: -200px;
+  background: transparent;
+}
+nav .logo{
+  width: 150px;
+  cursor: pointer;
+}
+
+nav .menu-icon {
+  width: 50px;
+  cursor: pointer;
+}
+nav ul {
+  flex: 1;
+  text-align: right;
+  margin-right: 170px;
+  margin-top: -45px;
+
+}
+
+nav ul li{
+  list-style: none; /*--- its for remove bullets ----*/
+  display: inline-block; /*---- its for align side by side------ */
+  margin: 10px 30px;
+}
+nav ul li a{
+  text-decoration: none;
+  color: #000;
+  font-weight: 700;
+  padding: 10px;
+  position: relative;
+}
+/* -menu hover effect start from here- */
+
+/*----Its for create the hover effect ,,, for height:opx; ,,,, Normali its not visual,,,But we hover the a link,,then it will work------ Jehetu aita hover korar por kaj korbe tai aikhane before use kora hoyese-----*/
+nav ul li a::before{ 
+  content: ' ';
+  width: 100%;
+  height: 0px;
+  background: #d9f688;
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  z-index: -1;
+  transition: height 0.5s;
+}
+
+nav ul li a:hover::before{
+  height: 85px;
+}
+/* -menu hover effect end here- */
+ nav .fa-times {
+  display: block;
+  margin: 10px;
+  font-size: 22px;
+  cursor: pointer;
+  margin-left: 73%;
+  margin-top: -14px;
+  transition: 0.5s;
+  background: #fff;
+}
+/* ----------------Navigation menu section End here--------------------- */
+.row{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.col{
+  flex-basis: 50%;
+  position: relative;
+}
+.feature-img{
+  width: 100%;
+  margin-top: 10px;
+}
+
+.thumbnail-img{
+  width: 280px;
+  position: absolute;
+  bottom: 10px;
+  left: -110px;
+  border-radius: 8px;
+  box-shadow: 5px 8px 10px rgba(0, 0, 0, 0.2);
+}
+
+.col h1{
+  margin-top: 180px;
+  font-size: 40px;
+  font-weight: 600;
+}
+.col a{
+  text-decoration: none;
+  padding: 18px 50px;
+  border-radius: 30px;
+  background: #d9f688;
+  display: inline-block;
+  color: #000;
+  font-weight: 700;
+  margin-top: 70px;
+  transition: 0.5s;
+  border: 1px solid transparent;
+}
+
+.col a:hover{
+  box-shadow: 5px 8px 10px rgba(0, 0, 0, 0.2);
+  border: 1px solid #000;
+}
+
+/*================Header Section End Here================*/
+
+
+
+/*================Middle Section Start From Here================*/
+.Middle-section{
+    width: 100%;
+    height: 120vh;
+    position: relative;
+    margin-top: 100px;
+    border-top: 1px solid #ddd;
+}
+
+
+.img01{
+  position: absolute;
+  top: 50px;
+  right: 250px;
+  width: 300px;
+  height: 300px;
+  transition: 0.5s;
+}
+.img01:hover{
+  box-shadow: 5px 8px 10px rgba(0, 0, 0, 0.2);
+}
+
+h3{
+  position: absolute;
+  top: 30%;
+  left: 40%;
+}
+.Avocado-01{
+  color: #ddd;
+  position: absolute;
+  top: 35%;
+  left: 40%;
+}
+
+
+.img02 {
+position: absolute;
+  top: 50%;
+  left: 250px;
+  width: 300px;
+  height: 300px;
+  transition: 0.5s;
+}
+.img02:hover {
+  box-shadow: 5px 8px 10px rgba(0, 0, 0, 0.3);
+}
+
+h4 {
+  position: absolute;
+  top: 70%;
+  right: 50%;
+}
+.Avocado-02 {
+  color: #ddd;
+  position: absolute;
+  top: 75%;
+  left: 44%;
+}
+/*================Middle Section End Here================*/
+
+
+
+/*================Foopter Section Start From Here================*/
+
+.Footer-section{
+  width: 100%;
+  height: 30vh;
+  background: #ddd;
+  position: relative;
+}
+.top-btn {
+  color: #000;
+  position: absolute;
+  right: 40px;
+  text-decoration: none;
+}
+
+.top-btn:hover {
+  text-decoration: underline;
+
+}
+
+.Footer-section h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+}
+
+
+.email {
+  font-size: 25px;
+  position: absolute;
+  left: 38%;
+  top: 30%;
+  text-decoration: none;
+  color: #000;
+}
+
+
+
+
+
+.Footer-section .social-Media {
+
+  position: absolute;
+  left: 42%;
+  top: 60%;
+}
+
+.Footer-section .social-Media .fa {
+  color: #000;
+  margin-left: 0px;
+  padding: 10px;
+  font-size: 30px;
+}
+
+.Footer-section .social-Media .fa-youtube:hover {
+  color: red;
+}
+
+.Footer-section .social-Media .fa-facebook:hover {
+  color: #0984e3;
+}
+
+.Footer-section .social-Media .fa-twitter:hover {
+  color: #81ecec;
+}
+
+.Footer-section .social-Media .fa-instagram:hover {
+  color: #e84393;
+}
+
+.Footer-section .social-Media .fa-github:hover {
+  color: #636e72;
+}
+
+.Footer-section p {
+  color: #000;
+  position: absolute;
+  left: 38%;
+  top: 87%;
+  font-size: 20px;
+}
+
+/* =======Footer-section style end here======= */
