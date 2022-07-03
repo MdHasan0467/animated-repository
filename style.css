@@ -72,6 +72,7 @@ nav ul li a::before{
 }
 
 nav ul li a:hover::before{
+  box-shadow: 5px 8px 10px rgba(0, 0, 0, 0.2);
   height: 85px;
 }
 /* -menu hover effect end here- */
@@ -146,7 +147,7 @@ nav ul li a:hover::before{
 }
 
 
-.img01{
+.Middle-section-img01{
   position: absolute;
   top: 50px;
   right: 250px;
@@ -154,16 +155,16 @@ nav ul li a:hover::before{
   height: 300px;
   transition: 0.5s;
 }
-.img01:hover{
+.Middle-section-img01:hover{
   box-shadow: 5px 8px 10px rgba(0, 0, 0, 0.2);
 }
 
-h3{
+.img01_heading{
   position: absolute;
   top: 30%;
   left: 40%;
 }
-.Avocado-01{
+.img01-text{
   color: #ddd;
   position: absolute;
   top: 35%;
@@ -171,7 +172,7 @@ h3{
 }
 
 
-.img02 {
+.Middle-section-img02 {
 position: absolute;
   top: 50%;
   left: 250px;
@@ -179,16 +180,16 @@ position: absolute;
   height: 300px;
   transition: 0.5s;
 }
-.img02:hover {
+.Middle-section-img02:hover {
   box-shadow: 5px 8px 10px rgba(0, 0, 0, 0.3);
 }
 
-h4 {
+.img02_heading{
   position: absolute;
   top: 70%;
   right: 50%;
 }
-.Avocado-02 {
+.img02-text{
   color: #ddd;
   position: absolute;
   top: 75%;
@@ -206,27 +207,28 @@ h4 {
   background: #ddd;
   position: relative;
 }
-.top-btn {
+.footer__section__top-btn {
   color: #000;
   position: absolute;
   right: 40px;
   text-decoration: none;
 }
 
-.top-btn:hover {
+.footer__section__top-btn:hover {
   text-decoration: underline;
 
 }
 
-.Footer-section h1 {
+.footer__section__heading {
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 30px;
+  padding: 1rem 0;
 }
 
 
-.email {
+.footer__section__email {
   font-size: 25px;
   position: absolute;
   left: 38%;
@@ -239,41 +241,41 @@ h4 {
 
 
 
-.Footer-section .social-Media {
+.footer__section__social-Media {
 
   position: absolute;
-  left: 42%;
-  top: 60%;
+  left: 40%;
+  top: 50%;
 }
 
-.Footer-section .social-Media .fa {
+.footer__section__social-Media .fa {
   color: #000;
   margin-left: 0px;
   padding: 10px;
   font-size: 30px;
 }
 
-.Footer-section .social-Media .fa-youtube:hover {
+.footer__section__social-Media .fa-youtube:hover {
   color: red;
 }
 
-.Footer-section .social-Media .fa-facebook:hover {
+.footer__section__social-Media .fa-facebook:hover {
   color: #0984e3;
 }
 
-.Footer-section .social-Media .fa-twitter:hover {
+.footer__section__social-Media .fa-twitter:hover {
   color: #81ecec;
 }
 
-.Footer-section .social-Media .fa-instagram:hover {
+.footer__section__social-Media .fa-instagram:hover {
   color: #e84393;
 }
 
-.Footer-section .social-Media .fa-github:hover {
+.footer__section__social-Media .fa-github:hover {
   color: #636e72;
 }
 
-.Footer-section p {
+.footer__section__copyright {
   color: #000;
   position: absolute;
   left: 38%;
@@ -283,6 +285,3 @@ h4 {
 
 /* =======Footer-section style end here======= */
 
-.footer__section__heading{
-  padding: 2rem 0;
-}
